@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: linear-gradient(120deg, #ef6f6c, #f3817f);
+    font-family: "Open Sans", Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+    padding-top: 4rem;
+    font-size: 2rem;
+    font-family:'Playfair Display', 'Arial Narrow', Arial, sans-serif;
+    color: #ffef9f;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(94, 94, 94, 0.78);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header, form {
+    min-height: 10vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+    max-width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 2rem ;
+    margin: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    background-color: transparent;
+    color: white;
 }
+
+form input {
+    flex: 1;
+    position: relative;
+    right: 0px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form button {
+    cursor: pointer;
+    color: #426a5a;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 0px;
+}
+
+form button:hover {
+    color: #ffd7ed;
+}
+#root {
+    width: 80%;
+    height: 100vh;
+}
+
+.wraper {
+    min-width: 80vw;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+::placeholder {
+    color: rgb(255, 255, 255, 0.8);
+    opacity: 0.5;
+}
+
+.add-todo {
+    border-bottom: 2px solid #426a5a;
+    display: flex;
+    width: 70%;
+}
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+    margin: auto;
+}
+
+.todo-list {
+    list-style-type: none;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    padding-top: 2rem;
+
+}
+
+.todo-div {
+    margin: 0.3rem;
+    background-color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.todo-div li {
+    flex: 1;
+}
+
+.checked, .delete {
+    border: none;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    color: #426a5a;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.checked:focus, .delete:focus {
+    outline: none;
+}
+
+.checked:hover, .delete:hover {
+    color: #ef6f6c;
+}
+
+.todo-item {
+    font-size: 0.9rem;
+    padding: 0.5rem 0.7rem 0.5rem 0.7rem;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    transition: all 0.3s ease;
+}
+
+.fa-check, .fa-trash-alt {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
+
+.deleted {
+    transform: translateX(200px);
+    opacity: 0;
+}
+
+
+.filter-todos:focus {
+    outline: none;
+}
+
+select {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    min-width: 100%;
+}
+.select {
+    position: relative;
+    min-width: 30%;
+
+}
+select {
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    position: relative;
+    left: 0px;
+}
+
+.select::after{
+    color: #426a5a;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    color: white;
+}
+
+option {
+    color: black;
+    font-size: 0.9rem;
+    inline-size: 1rem;
+}
+
+@media (max-width: 900px) {
+    .todo-container {
+        width: 100%;
+    }
+    .todo-div {
+        width: 100%;
+    }
+    form {
+        min-width: 80%;
+    }
+    }
+
+@media (max-width: 600px) {
+    header {
+        text-align: center;
+        padding-top: 1rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .todo-list {
+        width: 90%;
+    }
+    .add-todo {
+        min-width: 90%;
+    }
+    .todo-input {
+        width: fit-content;
+    }
+    }
