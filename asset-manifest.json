@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/julietamullen.github.io/todolist-react.github.io/static/css/main.9428ef8d.chunk.css",
-    "main.js": "/julietamullen.github.io/todolist-react.github.io/static/js/main.f1c24654.chunk.js",
-    "main.js.map": "/julietamullen.github.io/todolist-react.github.io/static/js/main.f1c24654.chunk.js.map",
-    "runtime-main.js": "/julietamullen.github.io/todolist-react.github.io/static/js/runtime-main.bf453c43.js",
-    "runtime-main.js.map": "/julietamullen.github.io/todolist-react.github.io/static/js/runtime-main.bf453c43.js.map",
-    "static/js/2.5b6da8dd.chunk.js": "/julietamullen.github.io/todolist-react.github.io/static/js/2.5b6da8dd.chunk.js",
-    "static/js/2.5b6da8dd.chunk.js.map": "/julietamullen.github.io/todolist-react.github.io/static/js/2.5b6da8dd.chunk.js.map",
-    "static/js/3.a8229d32.chunk.js": "/julietamullen.github.io/todolist-react.github.io/static/js/3.a8229d32.chunk.js",
-    "static/js/3.a8229d32.chunk.js.map": "/julietamullen.github.io/todolist-react.github.io/static/js/3.a8229d32.chunk.js.map",
-    "index.html": "/julietamullen.github.io/todolist-react.github.io/index.html",
-    "static/css/main.9428ef8d.chunk.css.map": "/julietamullen.github.io/todolist-react.github.io/static/css/main.9428ef8d.chunk.css.map",
-    "static/js/2.5b6da8dd.chunk.js.LICENSE.txt": "/julietamullen.github.io/todolist-react.github.io/static/js/2.5b6da8dd.chunk.js.LICENSE.txt"
+    "main.css": "/julietamullen.github.io/todolist-react/static/css/main.9428ef8d.chunk.css",
+    "main.js": "/julietamullen.github.io/todolist-react/static/js/main.f1c24654.chunk.js",
+    "main.js.map": "/julietamullen.github.io/todolist-react/static/js/main.f1c24654.chunk.js.map",
+    "runtime-main.js": "/julietamullen.github.io/todolist-react/static/js/runtime-main.2e788d5d.js",
+    "runtime-main.js.map": "/julietamullen.github.io/todolist-react/static/js/runtime-main.2e788d5d.js.map",
+    "static/js/2.5b6da8dd.chunk.js": "/julietamullen.github.io/todolist-react/static/js/2.5b6da8dd.chunk.js",
+    "static/js/2.5b6da8dd.chunk.js.map": "/julietamullen.github.io/todolist-react/static/js/2.5b6da8dd.chunk.js.map",
+    "static/js/3.a8229d32.chunk.js": "/julietamullen.github.io/todolist-react/static/js/3.a8229d32.chunk.js",
+    "static/js/3.a8229d32.chunk.js.map": "/julietamullen.github.io/todolist-react/static/js/3.a8229d32.chunk.js.map",
+    "index.html": "/julietamullen.github.io/todolist-react/index.html",
+    "static/css/main.9428ef8d.chunk.css.map": "/julietamullen.github.io/todolist-react/static/css/main.9428ef8d.chunk.css.map",
+    "static/js/2.5b6da8dd.chunk.js.LICENSE.txt": "/julietamullen.github.io/todolist-react/static/js/2.5b6da8dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.bf453c43.js",
+    "static/js/runtime-main.2e788d5d.js",
     "static/js/2.5b6da8dd.chunk.js",
     "static/css/main.9428ef8d.chunk.css",
     "static/js/main.f1c24654.chunk.js"
