@@ -8,8 +8,9 @@ const Form = ({inputText, setInputText, todos, setTodos, setStatus }) => {
     const handleSubmitTodo = (e) => {
         e.preventDefault();
         // Every todo will be an object with the text, completed and id attributes.
-        setTodos([...todos, {text: inputText, completed: false, id: Math.random()*1000}])
-        setInputText("");
+        if({inputText}.inputText != "" && {inputText}.inputText.trim() != "") {
+            setTodos([...todos, {text: inputText, completed: false, id: Math.random()*1000}])
+            setInputText("");}
     };
     const handleStatus = (e) => {
         setStatus(e.target.value)
